@@ -1,0 +1,39 @@
+@import "normalize.css/normalize.css"
+
+.container
+    display: block
+    width: 1170px
+    margin: 0 auto
+
+.clearfix:after
+    content: ""
+    display: table
+    clear: both
+
+.boundary:after
+    content: "|"
+    padding: 0 12px
+
+ul
+    margin: 0
+    li
+        list-style: none
+
+#logo
+    float: left
+    img
+        display: block
+
+#nav
+    float: right
+    text-transform: uppercase
+    line-height: 100px
+    li
+        float: left
+        a
+            padding: 0 12px
+            font-size: 13px
+            color: #333
+            text-decoration: none
+            &:hover
+                color: #d6b161
