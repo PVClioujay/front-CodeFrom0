@@ -1,5 +1,9 @@
 @import "normalize.css/normalize.css"
 
+*
+    box-sizing: border-box
+    font-family: 'Source Sans Pro', sans-serif
+
 .container
     display: block
     width: 1170px
@@ -13,6 +17,14 @@
 .boundary:after
     content: "|"
     padding: 0 12px
+
+.col-6, .col-4
+    float: left
+    padding: 0 10px
+.col-4
+    width: 33.333333%
+.col-6
+    width: 50%
 
 ul
     margin: 0
@@ -37,3 +49,31 @@ ul
             text-decoration: none
             &:hover
                 color: #d6b161
+
+// content
+.slider
+    img
+        width: 100%
+        height: auto
+
+.categorys
+    padding-top: 100px
+    img
+        width: 100%
+        height: auto
+    .title
+        position: absolute
+        top: 35%
+        right: 10%
+        color: #222
+        text-transform: uppercase
+        font-style: 24px
+        text-align: right
+        font-weight: 300
+    .dark
+        color: #222
+    .light
+        color: #fff
+    .category
+        position: relative
+        margin-bottom: 20px
